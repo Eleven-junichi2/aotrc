@@ -1,6 +1,18 @@
+import os
+# from pathlib import Path
+
+# from googleapiclient.discovery import build
 import requests
-import json
+import dotenv
+
+# env_file_path = Path(__file__).parent / ".env"
+
+dotenv.load_dotenv()
+
+API_KEY = os.environ.get("API_KEY")
+
+# service = build("")
 
 result = requests.get(
-    "https://www.googleapis.com/youtube/v3/search?type=video&part=snippet&q=attack+on+titan&key=AIzaSyB4V4mgc_hX7Ud66Dh1uDMMZmrx3_X5eKI")
+    f"https://www.googleapis.com/youtube/v3/search?type=video&part=snippet&q=attack+on+titan&key={API_KEY}")
 print(result.text)
