@@ -6,11 +6,15 @@ verify_ssl = true
 [dev-packages]
 flake8 = "*"
 autopep8 = "*"
+pyinstaller = "*"
 
 [packages]
 requests = "*"
-google-api-python-client = "*"
+google-api-python-client = "==1.8.0"
 python-dotenv = "*"
+pysimplegui = "*"
+pillow = "*"
+emoji = "*"
 
 [requires]
 python_version = "3.7"
