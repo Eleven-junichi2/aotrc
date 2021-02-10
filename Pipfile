@@ -10,7 +10,7 @@ pyinstaller = "*"
 
 [packages]
 requests = "*"
-google-api-python-client = "*"
+google-api-python-client = "==1.8.0"
 python-dotenv = "*"
 pysimplegui = "*"
 pillow = "*"

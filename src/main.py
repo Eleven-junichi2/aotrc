@@ -32,11 +32,11 @@ def search_reaction_videos(season: int, episode: int, max_result: int):
             type="video"
         ).execute()
         return search_response
-    except HttpError as error:
+    except HttpError:
         print("HttpError: It causes probably exceeded access limit.")
         print("Sorry but you cannot use this app until tomorrow.")
         input()
-        sys.exit(error)
+        sys.exit(1)
 
 
 def main():
